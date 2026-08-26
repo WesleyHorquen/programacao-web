@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+
+    <!-- Formulários -->
+    <fieldset>
+        <legend> Cadastro de pré compra </legend>
+        <form action="api/posturl">
+            <!-- Campo de texto -->
+            <div>
+                <label for="idnome">Nome: </label><br>
+                <input type="text" name="nome" id="idnome" placeholder="Nome completo" maxlength="100" minlength="2" required />
+            </div>
+
+            <!-- Campo de password -->
+            <div>
+                <label for="idsenha">Senha: </label><br>
+                <input type="password" name="senha" id="idsenha" placeholder="Senha" maxlength="15" minlength="6"/>
+            </div>
+            
+            <!-- Campo de email -->
+            <div>
+                <label for="idemail">Email: </label><br>
+                <input type="email" name="email" id="idemail" placeholder="Email" maxlength="100" minlength="2" required />
+            </div>
+
+            <!-- Campo de idade -->
+            <div>
+                <label for="ididade">Idade: </label><br>
+                <input type="number" name="idade" id="ididade" placeholder="Idade" maxlength="2" min="18" required />
+            </div>
+
+            <!-- Check box -->
+            <h2>Escolha um shopping para retirada</h2>
+            <div>
+                <input type="checkbox" name="shopping" id="idshopping1" value="Amazonas Shopping">
+                <label for="idshopping1">Amazonas Shopping</label><br>
+
+                <input type="checkbox" name="shopping" id="idshopping2" value="Manauara Shopping">
+                <label for="idshopping2">Manauara Shopping</label><br>
+
+                <input type="checkbox" name="shopping" id="idshopping3" value="Shopping Ponta Negra">
+                <label for="idshopping3">Shopping Ponta Negra</label><br>
+            </div>
+
+            <!-- Importa mapa do google maps -->
+            <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0019614913763!2d-60.025269525029074!3d-3.094136296881475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1a9d0a85c941%3A0x1b2f0d7a0b492315!2sAmazonas%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1786670904621!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            <!-- Input Radio -->
+            <h2>Escolha uma forma de pagamento</h2>
+            <div>
+                <input type="radio" name="pagamento" id="idpagamento1" value="Pix">
+                <label for="idpagamento1">Pix</label><br>
+
+                <input type="radio" name="pagamento" id="idpagamento2" value="Cartão de Crédito">
+                <label for="idpagamento2">Cartão de Crédito</label><br>
+
+                <input type="radio" name="pagamento" id="idpagamento3" value="Cartão de Débito">
+                <label for="idpagamento3">Cartão de Débito</label><br>
+            </div>
+
+            <!-- INPUT COLOR -->
+            <div>
+                <br><label for="idcor">Escolha uma cor: </label><br>
+                <input type="color" name="cor" id="idcor" value="ff0000"/>
+            </div>
+
+            <!-- INPUT DATE TIME -->
+            <div>
+                <br><label  for="">Informe a data de retirada:</label><br>
+                <input type="date" name="data_retirada" id="iddata_retirada" min="2026-08-13" max="2026-09-30"/>
+                <input type="time" name="hora_retirada" id="idhora_retirada" min="11:00" max="20:00"/>
+            </div>
+
+            <!-- INPUT DROPDOWN -->
+            <div>
+                <h2>Atualmente é usuário de que marca?</h2>
+                <select name="marca" id="idmarca">
+                    <option disabled selected value="">Selecione uma marca</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Motorola">Motorola</option>
+                    <option value="Xiaomi">Xiaomi</option>
+                </select>
+            </div>
+            
+            <!-- INPUT FILE apenas arquivos jpg, png e pdf -->
+            <div>
+                <h2>Anexe um documento para confirmar idade:</h2>
+                <label for="iddocumento"> Anexe documento:</label>
+                <input type="file" name="documento" id="iddocumento" accept=".jpg, .png, .pdf"/>
+            </div>
+
+            <!-- INPUT RANGE -->
+            <div>
+                <br><label for="idmemoria">Escolha quantos dispositivos:</label>
+                <br><input type="range" name="memoria" id="idmemoria" min="1" max="10" step="1"/>
+            </div>
+
+            <br>
+            <!-- <input type="image" src="https://png.pngtree.com/png-vector/20230330/ourmid/pngtree-click-the-submit-icon-button-vector-png-image_6674608.png" width="100" height="80" alt="Submit"> -->
+
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+            <br><input type="button" value="Mostrar Detalhes" onclick="alert('Pre compra linha Z8')">
+            <br><br><input type="button" value="Voltar" onclick="window.location.href='index.html'">
+        </form>
+    </fieldset>
+
+</body>
+</html>

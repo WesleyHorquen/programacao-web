@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #6f1fb6;
+            color: #fff;
+            padding: 5px 10px;
+        }
+
+        td {
+            background-color: #15dd1f;
+            padding: 5px 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+    <h2>Tabelas Simples</h2>
+    <table border="1"> <!-- border = borda da tabela visivel -->
+        <!-- tr = table row = linha da tabela -->
+        <!-- td = table data = dados da tabela ---->
+        <tr>
+            <th>Pessoa 1</th> <!-- th = table header = cabeçalho da tabela -->
+            <th>Pessoa 2</th>
+            <th>Pessoa 3</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Carlos</td>
+            <td>André</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <h2>Tabela com coluna mesclada</h2>
+    <table border="1">
+        <tr>
+            <th colspan="2">Nome</th> <!-- colspan = coluna mesclada -->
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Farias</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>André</td>
+            <td>57</td>
+        </tr>
+    </table>
+    <table border="1">
+        <h2>Tabela com linha mesclada</h2>
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Ana</td> <!-- rowspan = linha mesclada -->
+            <td>11 99999-9999</td>
+        </tr>
+        <tr>
+            <td>99 11111-1111</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

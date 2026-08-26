@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+
+    <!-- Formulários -->
+    <fieldset>
+        <legend> Compra de aparelhos Samsung </legend>
+        <form action="usuario-cadastrado.html">
+            <!-- Campo de texto -->
+            <div>
+                <label for="idnome">Nome: </label><br>
+                <input type="text" name="nome" id="idnome" placeholder="Nome completo" maxlength="100" minlength="2" required />
+            </div>
+
+            <!-- Campo de password -->
+            <div>
+                <label for="idsenha">Senha: </label><br>
+                <input type="password" name="senha" id="idsenha" placeholder="Senha" maxlength="15" minlength="6"/>
+            </div>
+            
+            <!-- Campo de email -->
+            <div>
+                <label for="idemail">Email: </label><br>
+                <input type="email" name="email" id="idemail" placeholder="Email" maxlength="100" minlength="2" required />
+            </div>
+
+            <!-- Campo de idade -->
+            <div>
+                <label for="ididade">Idade: </label><br>
+                <input type="number" name="idade" id="ididade" placeholder="Idade" maxlength="2" min="18" required />
+            </div>
+
+            <!-- Check box -->
+            <h2>Escolha um shopping para retirada</h2>
+            <div>
+                <input type="checkbox" name="shopping" id="idshopping1" value="Amazonas Shopping">
+                <label for="idshopping1">Amazonas Shopping</label><br>
+
+                <input type="checkbox" name="shopping" id="idshopping2" value="Manauara Shopping">
+                <label for="idshopping2">Manauara Shopping</label><br>
+
+                <input type="checkbox" name="shopping" id="idshopping3" value="Shopping Ponta Negra">
+                <label for="idshopping3">Shopping Ponta Negra</label><br>
+            </div>
+
+            <br>
+
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+    
+            <br><br><input type="button" value="Voltar" onclick="window.location.href='index.html'">
+        </form>
+    </fieldset>
+
+</body>
+</html>
