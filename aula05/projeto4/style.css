@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color:blue;
+    color: #fff;
+    margin-top: 20px;
+}
+        
+p {
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+
+a {
+    background-color: sienna;
+    color: #eef302;
+    text-decoration: none;
+    border-radius: 10px;
+
+/* Margem Interna - 1 valor pega em todas direções - 2 primeiro vertical, segundo horizontal */
+    padding: 10px 20px;
+/* Margem Externa */
+    margin: 20px;
+/*tipo, espessura, cor */
+    border: solid, 5px, #ff0000; 
+}
+
+div {
+    background-color: blueviolet;
+    height: 100px; /* Altura */
+    width: 50%; /* Largura -  % relativo ao tamanho do pai, nesse caso o body*/
+}
