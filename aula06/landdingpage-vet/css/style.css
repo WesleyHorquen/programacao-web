@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.titulo1-w {
+    font-size: 36px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 16px;
+}
+
+.titulo1-b {
+    font-size: 36px;
+    color: #000;  
+    font-family: "Inter", sans-serif;
+    margin-bottom: 16px;
+}
+
+.paragrafo-w {
+    font-size: 18px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 16px;
+}
+
+.paragrafo-b {
+    font-size: 18px;
+    color: #000;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 16px;
+}
+
+/* header */
+#header {
+    background-color: #ebae00;
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between; /* espaço entre os itens */
+    align-items: center; /* centraliza os itens verticalmente */
+}
+
+#header img {
+    width: 80px;
+}
+
+#menu {
+    display: flex;
+    gap: 20px; /* espaço entre os itens do menu */
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    border: solid 3px transparent; /* adiciona uma borda transparente para evitar o "pulo" do layout ao passar o mouse */
+    padding: 5px 20px; /* adiciona um pouco de espaçamento interno para a borda */
+}
+
+#menu a:hover {
+    border-bottom: solid 3px #ffc400;
+    transition: ease-in-out 5s;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+}
+
+#search input {
+    background-color: #ffc400;
+    padding: 5px 10px;
+    font-size: 18px;
+    width: 200px;
+    outline: none; /* remove a borda padrão do input */
+    border-bottom: solid 3px transparent;
+}
+
+#search input:focus { /* quando o input estiver em foco */
+    border-bottom: solid 3px #00bfce;
+    transition: ease-in-out 0.3s;
+}
+
+#search span{
+    background-color: #00bfce;
+    padding: 5px 10px;
+    cursor: pointer; /* adiciona um cursor de ponteiro para indicar que é clicável */
+    user-select: none; /* impede a seleção do texto ao clicar */
+    color: #fff;
+}
+
+/* Conteúdo */
+
+#conteudo {
+    background-color: #ffc400;
+    padding: 50px 100px;
+    display: flex;
+}
+
+#texto {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.primary-button-b {
+    background-color: #00bfce;
+    color: #fff;
+    padding: 8px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    user-select: none; /* impede a seleção do texto ao clicar */
+}
+
+.primary-button-b:hover {
+    background-color: #01909a;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+.second-button {
+    background-color: transparent;
+    border: solid 2px #fff;
+    color: #fff;
+    padding: 8px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    user-select: none;
+}
+
+.second-button:hover {
+    background-color: #d3af0b;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+#imagem {
+    width: 40%;
+}
+
+#imagem img {
+    width: 100%;
+}
+
+/*Video*/
+
+#video{
+    background-color: #00bfce;
+    padding: 50px 100px;
+    display: flex;
+}
+
+#texto-video {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#player-video {
+    width: 50%; 
+}
